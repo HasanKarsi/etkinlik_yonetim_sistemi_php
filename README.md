@@ -157,12 +157,6 @@ CREATE TABLE tickets (
     FOREIGN KEY (event_id) REFERENCES events(id)
 );
 
-CREATE TABLE interests (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    interest VARCHAR(50) NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(id)
-);
 
 CREATE TABLE cart (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -214,8 +208,6 @@ Ana Sayfa
 
 Etkinlik ve duyuruları görüntüleyin.
 
-İlgi alanlarınıza göre önerilen etkinlikleri takip edin.
-
 Hava durumunu inceleyerek plan yapın.
 
 “Sepete Ekle” ile bilet alın.
@@ -248,12 +240,12 @@ Ticketmaster API: JSON formatında verilerle önerilen etkinlikler listelenir.
 
 Proje Yapısı
 
-etkinlik_yonetim/
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
+etkinlik_yonetim/ <br>
+├── css/<br>
+│   └── style.css<br>
+├── js/<br>
+│   └── script.js<br>
+├── images/<br>
 ├── includes/
 │   ├── db.php
 │   ├── header.php
