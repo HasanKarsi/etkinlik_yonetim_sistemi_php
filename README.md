@@ -246,22 +246,22 @@ etkinlik_yonetim/ <br>
 ├── js/<br>
 │   └── script.js<br>
 ├── images/<br>
-├── includes/
-│   ├── db.php
-│   ├── header.php
-│   └── footer.php
-├── api/
-│   └── fetch_events.php
-├── admin/
-│   ├── index.php
-│   ├── users.php
-│   ├── events.php
-│   └── announcements.php
-├── index.php
-├── register.php
-├── home.php
-├── cart.php
-└── logout.php
+├── includes/<br>
+│   ├── db.php<br>
+│   ├── header.php<br>
+│   └── footer.php<br>
+├── api/<br>
+│   └── fetch_events.php<br>
+├── admin/<br>
+│   ├── index.php<br>
+│   ├── users.php<br>
+│   ├── events.php<br>
+│   └── announcements.php<br>
+├── index.php<br>
+├── register.php<br>
+├── home.php<br>
+├── cart.php<br>
+└── logout.php<br>
 
 
 ---
