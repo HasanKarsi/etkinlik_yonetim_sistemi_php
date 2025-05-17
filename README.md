@@ -13,7 +13,7 @@ Değerlendiren: Arş. Gör. Özge Albayrak Ünal
 
 ---
 
-Özellikler
+<h1>Özellikler<\h1>
 
 Kullanıcı Özellikleri
 
