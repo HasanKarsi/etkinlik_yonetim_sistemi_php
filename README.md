@@ -43,6 +43,7 @@ Ticketmaster (etkinlik verileri için  API)
 Diğer: Git (versiyon kontrolü), GitHub (kod barındırma)
 
 -------------------------Kurulum-------------------------
+
 Gereksinimler
 
 WampServer (Apache, PHP 7.4+, MySQL)
@@ -129,6 +130,7 @@ CREATE TABLE cart (
 );
 
 ------------------------- Örnek veri-------------------------
+
 INSERT INTO users (email, password, is_approved, is_admin) VALUES
 ('admin@example.com', '$2y$10$examplehash', 1, 1),
 ('user@example.com', '$2y$10$examplehash', 1, 0);
@@ -184,10 +186,13 @@ Yeni etkinlik veya duyuru ekleyin, mevcutları silin.
 
 -------------------------API Entegrasyonu-------------------------
 
+
 OpenWeatherMap: Etkinlik lokasyonuna göre hava durumu bilgisi çeker. home.php içinde JavaScript ile entegre edilmiştir.
 Ticketmaster API : alınan api bağlantısı ile direk url üzerinden  json formatında API çekilir ve önerilen etkinlikler kısmında güncel etkinlikler sıralanır
 
 -------------------------Proje Yapısı-------------------------
+
+
 etkinlik_yonetim/
 ├── css/
 │   └── style.css
