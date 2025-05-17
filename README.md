@@ -1,10 +1,12 @@
 -------------------------Etkinlik Yönetim Sistemi-------------------------
+
 Bu proje, BMB315 Web Programlama dersi kapsamında geliştirilen bir Etkinlik Yönetim Sistemidir. Sistem, kullanıcıların etkinlikleri görüntülemesine, bilet satın almasına ve yöneticilerin etkinlik ile duyuru yönetmesine olanak tanır. Proje, web teknolojileri kullanılarak dinamik bir web uygulaması olarak tasarlanmıştır ve sosyal medya entegrasyonu gibi modern özellikler içerir.
 Proje, Atatürk Üniversitesi Mühendislik Fakültesi için hazırlanmış olup, teslim tarihi 26 Mayıs 2025’tir. Değerlendirme, Arş. Gör. Özge Albayrak Ünal tarafından yapılacaktır.
 Özellikler
 
 
 -------------------------Kullanıcı Özellikleri-------------------------
+
 
 Kayıt ve Giriş: Kullanıcılar e-posta ve şifre ile kaydolur, yönetici onayı gerekir. İlk girişte şifre değişikliği zorunludur.
 Ana Ekran: Etkinlikler ve duyurular tarih sırasına göre listelenir. Kullanıcı ilgi alanlarına göre öneriler alır.
@@ -13,6 +15,7 @@ Bilet Satın Alma: Kullanıcılar etkinlik için bilet seçer, sepet ekranında 
 Kontenjan Yönetimi: Bilet alımı sonrası etkinlik kontenjanı anlık azalır.
 
 -------------------------Yönetici Özellikleri-------------------------
+
 
 Kullanıcı Onayı: Yeni kayıtlı kullanıcıları onaylar.
 Etkinlik Yönetimi: Etkinlik ekleme, düzenleme, silme.
