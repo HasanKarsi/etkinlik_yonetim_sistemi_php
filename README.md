@@ -1,6 +1,3 @@
-İşte README.md dosyanda kullanabileceğin şekilde düzenlenmiş ve güzelleştirilmiş haliyle Markdown formatında yapılandırılmış proje tanıtım metni:
-
-
 ---
 
 Etkinlik Yönetim Sistemi
@@ -301,6 +298,3 @@ karsihasan25@gmail.com
 
 
 ---
-
-İstersen bu dosyayı .md olarak da dışa aktarabilirim. Yardımcı olayım mı?
-
