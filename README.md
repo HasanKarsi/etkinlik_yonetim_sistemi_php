@@ -5,7 +5,7 @@ Etkinlik Yönetim Sistemi
 Bu proje, BMB315 Web Programlama dersi kapsamında geliştirilmiştir. Kullanıcılar etkinlikleri görüntüleyebilir, bilet satın alabilirken; yöneticiler etkinlik ve duyuruları yönetebilir. Proje, modern web teknolojileri ile hazırlanmış dinamik bir web uygulamasıdır.
 
 > Teslim Tarihi: 26 Mayıs 2025
-Hazırlayan: Atatürk Üniversitesi - Mühendislik Fakültesi
+Hazırlayan: Hasan Karşı
 Değerlendiren: Arş. Gör. Özge Albayrak Ünal
 
 
