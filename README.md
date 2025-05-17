@@ -100,7 +100,7 @@ http://localhost adresinde çalıştığını kontrol edin.
 
 2. Proje Dosyalarını Klonlayın
 
-git clone https://github.com/kullanici/etkinlik-yonetim-sistemi.git
+git clone https://github.com/HasanKarsi/etkinlik-yonetim-sistemi.git
 
 Dosyaları C:\wamp64\www\ dizinine kopyalayın.
 
