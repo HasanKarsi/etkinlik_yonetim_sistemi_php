@@ -67,7 +67,7 @@ Bu proje, kullanıcıların etkinlikleri görüntüleyip bilet satın alabilece�
 
 2. **Proje Dosyalarını Klonlayın**
    ```bash
-   git clone https://github.com/HasanKarsi/etkinlik-yonetim-sistemi.git
+   git clone https://github.com/HasanKarsi/etkinlik_yonetim_sistemi_php.git
    ```
    Ardından klasörü `C:\wamp64\www\` dizinine taşıyın.
 
