@@ -1,121 +1,130 @@
----
-
-Etkinlik Yönetim Sistemi
-
-Bu proje, BMB315 Web Programlama dersi kapsamında geliştirilmiştir. Kullanıcılar etkinlikleri görüntüleyebilir, bilet satın alabilirken; yöneticiler etkinlik ve duyuruları yönetebilir. Proje, modern web teknolojileri ile hazırlanmış dinamik bir web uygulamasıdır.
-
-> Teslim Tarihi: 26 Mayıs 2025
-Hazırlayan: Hasan Karşı
-Değerlendiren: Arş. Gör. Özge Albayrak Ünal
-
-
-
-
----
-
-<h1>Özellikler</h1>
-
-Kullanıcı Özellikleri
-
-Kayıt ve Giriş: E-posta ve şifre ile kayıt olunur. Yönetici onayı zorunludur. İlk girişte şifre değişikliği yapılmalıdır.
-
-Ana Ekran: Etkinlikler ve duyurular tarih sırasına göre listelenir. Kullanıcıya ilgi alanlarına göre öneriler sunulur.
-
-Hava Durumu: OpenWeatherMap API ile etkinlik lokasyonuna göre gösterilir.
-
-Bilet Satın Alma: Bilet türüne göre fiyat hesaplanır, ödeme seçeneği sunulur.
-
-Kontenjan Yönetimi: Bilet alındığında kontenjan otomatik güncellenir.
-
-
-Yönetici Özellikleri
-
-Kullanıcı Onayı: Yeni kayıtlı kullanıcıların onaylanması.
-
-Etkinlik Yönetimi: Etkinlik ekleme, düzenleme, silme.
-
-Duyuru Yönetimi: Duyuru ekleme, listeleme, silme.
-
-
-
----
-
-Kullanılan Teknolojiler
-
-Front-End
-
-HTML5
-
-CSS3
-
-JavaScript
-
-
-Back-End
-
-PHP
-
-MySQL
-
-
-Sunucu ve API’ler
-
-Sunucu: WampServer (Apache, PHP, MySQL)
-
-API’ler:
-
-OpenWeatherMap (hava durumu)
-
-Ticketmaster (etkinlik verileri)
-
-
-
-Diğer
-
-Git, GitHub
-
-
-
----
-
-Kurulum
-
-Gereksinimler
-
-WampServer (PHP 7.4+, MySQL)
-
-Tarayıcı (Chrome, Firefox vb.)
-
-OpenWeatherMap ve Ticketmaster API anahtarları
-
-
-Adımlar
-
-1. WampServer Kurulumu
-
-WampServer’ı buradan indirip kurun.
-
-http://localhost adresinde çalıştığını kontrol edin.
-
-
-2. Proje Dosyalarını Klonlayın
-
-git clone https://github.com/HasanKarsi/etkinlik-yonetim-sistemi.git
-
-Dosyaları C:\wamp64\www\ dizinine kopyalayın.
-
-
-3. Veritabanı Kurulumu
-
-http://localhost/phpmyadmin adresine gidin.
-
-Yeni bir veritabanı oluşturun: etkinlik_yonetim
-
-Aşağıdaki SQL komutlarını çalıştırın:
-
-
-<details>
-<summary>SQL Script (Tıklayarak Gör)</summary>CREATE DATABASE etkinlik_yonetim;
+<!-- Giriş ve Kapak -->
+<h1 align="center">🎟️ Etkinlik Yönetim Sistemi</h1>
+<p align="center">
+  <em>BMB315 Web Programlama Dersi Projesi</em><br/>
+  <strong>Hazırlayan:</strong> Hasan Karşı • <strong>Değerlendiren:</strong> Arş. Gör. Özge Albayrak Ünal<br/>
+  <strong>📅 Teslim Tarihi:</strong> 26 Mayıs 2025
+</p>
+
+<hr/>
+
+<!-- Özellikler -->
+<h2>🚀 Özellikler</h2>
+
+<table>
+  <tr>
+    <th colspan="2" align="left">👤 Kullanıcı Özellikleri</th>
+  </tr>
+  <tr>
+    <td><strong>Kayıt ve Giriş</strong></td>
+    <td>E-posta ve şifre ile kayıt olunur, yönetici onayı zorunludur. İlk girişte şifre değişikliği yapılır.</td>
+  </tr>
+  <tr>
+    <td><strong>Ana Ekran</strong></td>
+    <td>Etkinlikler ve duyurular tarih sırasına göre listelenir, ilgi alanlarına göre öneriler gösterilir.</td>
+  </tr>
+  <tr>
+    <td><strong>Hava Durumu</strong></td>
+    <td>OpenWeatherMap API ile lokasyona özel gösterilir.</td>
+  </tr>
+  <tr>
+    <td><strong>Bilet Satın Alma</strong></td>
+    <td>Bilet türüne göre fiyat hesaplanır, ödeme seçeneği sunulur.</td>
+  </tr>
+  <tr>
+    <td><strong>Kontenjan Yönetimi</strong></td>
+    <td>Bilet alındığında kontenjan otomatik güncellenir.</td>
+  </tr>
+</table>
+
+<br/>
+
+<table>
+  <tr>
+    <th colspan="2" align="left">🛠️ Yönetici Özellikleri</th>
+  </tr>
+  <tr>
+    <td><strong>Kullanıcı Onayı</strong></td>
+    <td>Yeni kayıtlı kullanıcıların onaylanması.</td>
+  </tr>
+  <tr>
+    <td><strong>Etkinlik Yönetimi</strong></td>
+    <td>Etkinlik ekleme, düzenleme, silme işlemleri.</td>
+  </tr>
+  <tr>
+    <td><strong>Duyuru Yönetimi</strong></td>
+    <td>Duyuru ekleme, silme ve listeleme.</td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- Teknolojiler -->
+<h2>💻 Kullanılan Teknolojiler</h2>
+
+<table>
+  <tr>
+    <th>Katman</th>
+    <th>Teknolojiler</th>
+  </tr>
+  <tr>
+    <td><strong>Front-End</strong></td>
+    <td>HTML5, CSS3, JavaScript</td>
+  </tr>
+  <tr>
+    <td><strong>Back-End</strong></td>
+    <td>PHP, MySQL</td>
+  </tr>
+  <tr>
+    <td><strong>Sunucu</strong></td>
+    <td>WampServer (Apache, PHP, MySQL)</td>
+  </tr>
+  <tr>
+    <td><strong>API'ler</strong></td>
+    <td>OpenWeatherMap, Ticketmaster</td>
+  </tr>
+  <tr>
+    <td><strong>Versiyon Kontrol</strong></td>
+    <td>Git, GitHub</td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- Kurulum -->
+<h2>🔧 Kurulum</h2>
+
+<h4>Gereksinimler</h4>
+<ul>
+  <li>WampServer (PHP 7.4+)</li>
+  <li>Web Tarayıcı (Chrome, Firefox vb.)</li>
+  <li>OpenWeatherMap ve Ticketmaster API anahtarları</li>
+</ul>
+
+<h4>Adımlar</h4>
+
+<ol>
+  <li>
+    <strong>WampServer Kurulumu:</strong><br/>
+    <a href="https://www.wampserver.com/en/">WampServer</a>'ı kurun ve <code>http://localhost</code> adresinde çalıştığını doğrulayın.
+  </li>
+  <li>
+    <strong>Proje Dosyalarını Klonlayın:</strong><br/>
+    <code>git clone https://github.com/HasanKarsi/etkinlik-yonetim-sistemi.git</code><br/>
+    Dosyaları <code>C:\wamp64\www\</code> dizinine taşıyın.
+  </li>
+  <li>
+    <strong>Veritabanı Kurulumu:</strong><br/>
+    <ul>
+      <li><a href="http://localhost/phpmyadmin">phpMyAdmin</a>'e gidin.</li>
+      <li>Yeni veritabanı oluşturun: <code>etkinlik_yonetim</code></li>
+      <li>Aşağıdaki SQL komutlarını çalıştırın:</li>
+    </ul>
+    <details>
+      <summary><strong>SQL Script (Tıklayarak Göster)</strong></summary>
+
+````sql
+CREATE DATABASE etkinlik_yonetim;
 USE etkinlik_yonetim;
 
 CREATE TABLE users (
@@ -157,7 +166,6 @@ CREATE TABLE tickets (
     FOREIGN KEY (event_id) REFERENCES events(id)
 );
 
-
 CREATE TABLE cart (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
@@ -167,126 +175,98 @@ CREATE TABLE cart (
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (event_id) REFERENCES events(id)
 );
+</details> 
 
-</details>4. Örnek Veriler
+</li> 
 
+<li> 
+  <strong>Örnek Veriler:</strong><br/> 
+  <pre>
 INSERT INTO users (email, password, is_approved, is_admin) VALUES
 ('admin@example.com', '$2y$10$examplehash', 1, 1),
 ('user@example.com', '$2y$10$examplehash', 1, 0);
+  </pre> 
+  <em>Not: Gerçek şifreler için <code>password_hash()</code> fonksiyonunu kullanın.</em> 
+</li> 
 
-> Not: Gerçek şifreler için password_hash() kullanın.
+<li> 
+  <strong>API Anahtarları:</strong><br/> 
+  <code>home.php</code> içinde <code>apiKey</code> değişkenine anahtarlarınızı ekleyin. 
+</li> 
 
+<li> 
+  <strong>Projeyi Çalıştırın:</strong><br/> 
+  Tarayıcıda <code>http://localhost/etkinlik_yonetim</code> adresine giderek giriş yapın. 
+</li> 
 
+</ol> 
 
-5. API Anahtarlarını Ekleyin
+<hr/> 
 
-home.php içindeki apiKey değişkenine OpenWeatherMap anahtarınızı ekleyin.
+<!-- Kullanım --> 
+<h2>📌 Kullanım</h2> 
+<ul> 
+  <li><strong>Kayıt ve Giriş:</strong> <code>register.php</code> ile kayıt, <code>index.php</code> ile giriş.</li> 
+  <li><strong>Ana Sayfa:</strong> Etkinlik ve duyurular, hava durumu, bilet alma işlemleri.</li> 
+  <li><strong>Sepet:</strong> Sepete eklenen biletler görüntülenir, ödeme yöntemi seçilerek işlem tamamlanır.</li> 
+  <li><strong>Yönetici Paneli:</strong> <code>admin/index.php</code> ile yönetici işlemleri yapılır.</li> 
+</ul> 
 
-Ticketmaster için API URL’sini ilgili değişkene girin.
+<hr/> 
 
+<!-- API Entegrasyonu --> 
+<h2>🔗 API Entegrasyonu</h2> 
+<ul> 
+  <li><strong>OpenWeatherMap:</strong> JavaScript ile <code>home.php</code> içinde entegre edilmiştir.</li> 
+  <li><strong>Ticketmaster API:</strong> JSON formatında verilerle önerilen etkinlikler listelenmektedir.</li> 
+</ul> 
 
-6. Projeyi Çalıştırın
+<hr/> 
 
-Tarayıcıdan http://localhost/etkinlik_yonetim adresine gidin.
+<!-- Proje Yapısı --> 
+<h2>📁 Proje Yapısı</h2> 
+<pre>
+etkinlik_yonetim/
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+├── includes/
+│   ├── db.php
+│   ├── header.php
+│   └── footer.php
+├── api/
+│   └── fetch_events.php
+├── admin/
+│   ├── index.php
+│   ├── users.php
+│   ├── events.php
+│   └── announcements.php
+├── index.php
+├── register.php
+├── home.php
+├── cart.php
+└── logout.php
+</pre> 
 
-Giriş yapmak için admin@example.com hesabını ya da yeni kullanıcı oluşturmayı deneyin.
+<hr/> 
 
+<!-- Katkı --> 
+<h2>🤝 Katkıda Bulunma</h2> 
+<ul> 
+  <li>Hataları bildirmek için bir <strong>Issue</strong> oluşturun.</li> 
+  <li>Yeni özellikler için <strong>Pull Request</strong> gönderin.</li> 
+</ul> 
 
+<hr/> 
 
----
+<!-- Lisans --> 
+<h2>📜 Lisans</h2> 
+<p>Bu proje yalnızca akademik amaçlarla, BMB315 Web Programlama dersi için geliştirilmiştir. Kodları veya raporu izinsiz paylaşmayınız.</p> 
 
-Kullanım
+<hr/> 
 
-Kayıt ve Giriş
-
-register.php üzerinden kayıt olun.
-
-index.php ile giriş yapın (ilk girişte şifre değiştirin).
-
-
-Ana Sayfa
-
-Etkinlik ve duyuruları görüntüleyin.
-
-Hava durumunu inceleyerek plan yapın.
-
-“Sepete Ekle” ile bilet alın.
-
-
-Sepet
-
-Seçilen etkinlikleri görüntüleyin.
-
-Ödeme yöntemiyle işlemi tamamlayın.
-
-
-Yönetici Paneli
-
-admin/index.php ile yöneticilere özel işlemleri gerçekleştirin.
-
-
-
----
-
-API Entegrasyonu
-
-OpenWeatherMap: JavaScript ile home.php içinde entegredir.
-
-Ticketmaster API: JSON formatında verilerle önerilen etkinlikler listelenir.
-
-
-
----
-
-Proje Yapısı
-
-etkinlik_yonetim/ <br>
-├── css/<br>
-│   └── style.css<br>
-├── js/<br>
-│   └── script.js<br>
-├── images/<br>
-├── includes/<br>
-│   ├── db.php<br>
-│   ├── header.php<br>
-│   └── footer.php<br>
-├── api/<br>
-│   └── fetch_events.php<br>
-├── admin/<br>
-│   ├── index.php<br>
-│   ├── users.php<br>
-│   ├── events.php<br>
-│   └── announcements.php<br>
-├── index.php<br>
-├── register.php<br>
-├── home.php<br>
-├── cart.php<br>
-└── logout.php<br>
-
-
----
-
-Katkıda Bulunma
-
-Hataları bildirmek için bir Issue oluşturun.
-
-Yeni özellikler için Pull Request gönderin.
-
-
-
----
-
-Lisans
-
-Bu proje yalnızca akademik amaçlarla, BMB315 Web Programlama dersi için geliştirilmiştir. Kodları veya raporu izinsiz paylaşmayınız.
-
-
----
-
-İletişim
-
-Her türlü soru ve öneri için:
-karsihasan25@gmail.com
-
-
----
+<!-- İletişim --> 
+<h2>📫 İletişim</h2> 
+<p>Her türlü soru ve öneri için: <a href="mailto:karsihasan25@gmail.com">karsihasan25@gmail.com</a></p>
