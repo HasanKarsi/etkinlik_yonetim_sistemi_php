@@ -180,8 +180,6 @@ etkinlik_yonetim/
 │   ├── db.php
 │   ├── header.php
 │   └── footer.php
-├── api/
-│   └── fetch_events.php
 ├── admin/
 │   ├── index.php
 │   ├── users.php
