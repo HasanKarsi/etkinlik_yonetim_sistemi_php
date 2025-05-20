@@ -175,7 +175,6 @@ etkinlik_yonetim/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── images/
 ├── includes/
 │   ├── db.php
 │   ├── header.php
