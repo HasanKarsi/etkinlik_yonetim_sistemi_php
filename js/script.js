@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // API anahtarı ve şehir bilgisi
-    const apiKey = 'dc5214703c33d777c096b9387d20250c'; 
+    const apiKey = 'API_Key'; 
     const city = 'Istanbul';
     console.log('Hava durumu API çağrısı yapılıyor: ', city);
 
