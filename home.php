@@ -74,7 +74,7 @@ $announcements = $pdo->query("SELECT * FROM announcements ORDER BY created_at DE
 
 // --------------------------
 // Ticketmaster API'den İstanbul'daki önerilen etkinlikleri çek
-$api_url = "https://app.ticketmaster.com/discovery/v2/events?apikey=ApOwDGH7bjwPYSLcVZbxKuyOAGTGqAgd&locale=*&city=%C4%B0stanbul";
+$api_url = "TicketMaster_API_URL_Buraya_Gelecek";
 $recommended_events = [];
 $error_message = '';
 
