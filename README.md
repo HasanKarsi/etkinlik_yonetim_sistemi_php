@@ -63,7 +63,7 @@ Bu proje, kullanıcıların etkinlikleri görüntüleyip bilet satın alabilece�
 ### 📌 Kurulum Adımları
 
 1. **WampServer’ı Kurun**  
-   [WampServer](https://www.wampserver.com/en/) indirip kurun ve `http://localhost` adresinde çalıştığını doğrulayın.
+   [WampServer](https://wampserver.aviatechno.net/) indirip kurun ve `http://localhost` adresinde çalıştığını doğrulayın.
 
 2. **Proje Dosyalarını Klonlayın**
    ```bash
