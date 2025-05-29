@@ -2,9 +2,7 @@
 <h1 align="center">🎫 Etkinlik Yönetim Sistemi</h1>
 <p align="center">
   <em>MBM206 Web Programlama dersi kapsamında geliştirilen bir dinamik web uygulaması.</em><br/>
-  <strong>Teslim Tarihi:</strong> 26 Mayıs 2025<br/>
   <strong>Hazırlayan:</strong> Hasan Karşı<br/>
-  <strong>Değerlendiren:</strong> Arş. Gör. Özge Albayrak Ünal
 </p>
 
 <hr/>
